@@ -10,63 +10,34 @@ class HomeScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(Icons.menu),
-                    Text(
-                      'Kalopul, Kathmandu',
-                      style: TextStyle(fontSize: 28),
-                    ),
-                    Icon(Icons.notifications)
-                  ],
+              const Padding(
+                padding: EdgeInsets.only(top: 40, left: 10, right: 10),
+                child: Text(
+                  'Welcome to The DreamTheater',
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
               ),
-              const SizedBox(height: 50),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                alignment: Alignment.topLeft,
-                height: 100,
-                width: double.infinity,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Welcome to SpaPlex',
-                      style: TextStyle(fontSize: 34, color: Color(0xffF96C6C)),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'Cosmetics of YOUR Choice',
-                      style: TextStyle(fontSize: 24),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 40),
               Container(
                 height: 50,
-                width: 300,
+                width: 340,
                 decoration: BoxDecoration(
-                  color: const Color(0xffF96C6C),
+                  color: Colors.purple,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
+                    Text(
+                      'Search Items',
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                    SizedBox(width: 40),
                     Icon(
                       Icons.search,
                       size: 24,
                       color: Colors.white,
                     ),
-                    Text(
-                      'Search Items',
-                      style: TextStyle(fontSize: 20, color: Colors.white),
-                    )
                   ],
                 ),
               ),
@@ -76,12 +47,12 @@ class HomeScreen extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Text(
-                    'Categories',
+                    'Upcoming Movies',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
-              const SizedBox(height: 5),
+              const SizedBox(height: 15),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -91,64 +62,64 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       children: [
                         Container(
-                          height: 100,
-                          width: 100,
+                          height: 200,
+                          width: 200,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.pink)),
                           child: Image.network(
-                            'https://images.unsplash.com/photo-1556227834-09f1de7a7d14?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZhY2UlMjBiZWF1dHklMjBwcm9kdWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800',
+                            'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
                             fit: BoxFit.cover,
                           ),
                         ),
-                        const Text('Face'),
+                        const Text('Batman'),
                       ],
                     ),
                     const SizedBox(width: 20),
                     Column(
                       children: [
                         Container(
-                          height: 100,
-                          width: 100,
+                          height: 200,
+                          width: 200,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.pink)),
                           child: Image.network(
-                            'https://images.unsplash.com/photo-1571646034647-52e6ea84b28c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGlwc3RpY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=800',
+                            'https://images.unsplash.com/photo-1580130775562-0ef92da028de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
                             fit: BoxFit.cover,
                           ),
                         ),
-                        const Text('Lips'),
+                        const Text('BIA'),
                       ],
                     ),
                     const SizedBox(width: 20),
                     Column(
                       children: [
                         Container(
-                          height: 100,
-                          width: 100,
+                          height: 200,
+                          width: 200,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.pink)),
                           child: Image.network(
-                            'https://images.unsplash.com/photo-1625153809071-9d8b790ff18c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFpciUyMHNoYW1wb298ZW58MHx8MHx8&auto=format&fit=crop&w=800',
+                            'https://m.media-amazon.com/images/I/71HBOO7tY5L._AC_SX679_.jpg',
                             fit: BoxFit.cover,
                           ),
                         ),
-                        const Text('Hair'),
+                        const Text('Joker'),
                       ],
                     ),
                     const SizedBox(width: 20),
                     Column(
                       children: [
                         Container(
-                          height: 100,
-                          width: 100,
+                          height: 200,
+                          width: 200,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.pink)),
                           child: Image.network(
-                            'https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXllcyUyMG1hc2NhcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=800',
+                            'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-21a1c803fe4ff4b858de24f5c91ec57f_screen.jpg?ts=1636996180',
                             fit: BoxFit.cover,
                           ),
                         ),
-                        const Text('Eyes'),
+                        const Text('After'),
                       ],
                     ),
                   ],
@@ -160,7 +131,7 @@ class HomeScreen extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Text(
-                    'Products',
+                    'Movies',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -176,7 +147,7 @@ class HomeScreen extends StatelessWidget {
                       height: 200,
                       width: 180,
                       child: Image.network(
-                        'https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXllcyUyMG1hc2NhcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=800',
+                        'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-21a1c803fe4ff4b858de24f5c91ec57f_screen.jpg?ts=1636996180',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -187,7 +158,7 @@ class HomeScreen extends StatelessWidget {
                       height: 200,
                       width: 180,
                       child: Image.network(
-                        'https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXllcyUyMG1hc2NhcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=800',
+                        'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-21a1c803fe4ff4b858de24f5c91ec57f_screen.jpg?ts=1636996180',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -205,7 +176,7 @@ class HomeScreen extends StatelessWidget {
                       height: 200,
                       width: 180,
                       child: Image.network(
-                        'https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXllcyUyMG1hc2NhcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=800',
+                        'https://images.unsplash.com/photo-1584448141569-69f342da535c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=741&q=80',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -216,7 +187,7 @@ class HomeScreen extends StatelessWidget {
                       height: 200,
                       width: 180,
                       child: Image.network(
-                        'https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXllcyUyMG1hc2NhcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=800',
+                        'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-21a1c803fe4ff4b858de24f5c91ec57f_screen.jpg?ts=1636996180',
                         fit: BoxFit.cover,
                       ),
                     ),

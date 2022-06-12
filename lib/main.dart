@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:spaplex/screens/home_screen.dart';
-import 'package:spaplex/screens/login.dart';
-import 'package:spaplex/screens/register.dart';
+
+import 'screens/home_screen.dart';
+import 'screens/login.dart';
+import 'screens/register.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/register',
+      initialRoute: '/home',
       routes: {
         '/login': (context) => const Login(),
         '/home': (context) => const HomeScreen(),
