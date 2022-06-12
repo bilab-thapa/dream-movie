@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:progulf/api/http_services.dart';
-import 'package:progulf/response/login_response.dart';
+import 'package:spaplex/api/http_services.dart';
+import 'package:spaplex/response/login_response.dart';
+
 import '../model/user.dart';
 import '../utils/url.dart';
 

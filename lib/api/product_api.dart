@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:mime/mime.dart';
 import 'package:http_parser/http_parser.dart';
-import 'package:progulf/api/http_services.dart';
+import 'package:spaplex/api/http_services.dart';
 
 import '../utils/url.dart';
 

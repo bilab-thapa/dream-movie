@@ -1,5 +1,5 @@
-import 'package:progulf/api/user_api.dart';
-import 'package:progulf/model/user.dart';
+import 'package:spaplex/api/user_api.dart';
+import 'package:spaplex/model/user.dart';
 
 class UserRepository {
   Future<bool> registerUser(User user) async {
